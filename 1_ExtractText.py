@@ -1,12 +1,14 @@
+'''
+Just Text (Works)
+Tabulart Text (Works) but Table Information also
+
+'''
+
+
 import fitz
 import os
 import numpy as np
 import json
-# from openai import OpenAI
-
-
-
-
 def extract_text_from_pdf(pdf_path):
     # Open the PDF file
     mypdf = fitz.open(pdf_path)
@@ -22,7 +24,7 @@ def extract_text_from_pdf(pdf_path):
 
 
 # Define the path to the PDF file
-pdf_path = "data/tabularText.pdf"
+pdf_path = "data/AboutBangladesh.pdf"
 # Extract text from the PDF file
 extracted_text = extract_text_from_pdf(pdf_path)
 print("Extracted text from PDF:")
